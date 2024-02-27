@@ -1,5 +1,5 @@
-# Catsane-A-Hyper-Casual-Game-Demo
-Still in progress. Had to take a break to learn enemy AI.
+# Kitty-Caos-A-Hyper-Casual-Game-Demo
+Hypercasual Game Demo
 
 # Kitty Chaos
 About the Project
@@ -22,6 +22,7 @@ After cloning or downloading the project, you can run the game in Unity.
 # Notes
 Some features may be incomplete as the game is currently in the demo stage.
 Artificial intelligence development is ongoing and will be further improved with future updates.
+There will be some bugs and glitches.
 
 # Contributions
 If you wish to contribute to the project, please open an issue or submit a pull request. Your contributions are highly valued!
