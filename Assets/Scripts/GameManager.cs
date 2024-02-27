@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SetCoin setCoin;
     
     [SerializeField] private TextMeshProUGUI timerText;
-    public int timerValue = 10;
+    public int timerValue = 30;
 
     public EnemyCatAI[] enemies;
 

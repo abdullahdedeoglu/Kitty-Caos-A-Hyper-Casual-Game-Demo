@@ -25,6 +25,14 @@ public class HitDetector : MonoBehaviour
                 setScore.AdjustScore();
                 setCoin.AdjustCoin();
             }
+            if (hit.gameObject.tag == "hitted")
+            {
+                Rigidbody rb = hit.gameObject.GetComponent<Rigidbody>();
+                Debug.Log(hit.transform.position);
+                rb.AddExplosionForce(explosionVelocity, transform.position, explosionRadius);
+                rb.AddForce(hit.transform.forward);
+            }
+
         }
 
     }
@@ -32,7 +40,7 @@ public class HitDetector : MonoBehaviour
     {
         Rigidbody rb = hit.gameObject.GetComponent<Rigidbody>();
         rb.isKinematic = false;
-        rb.AddExplosionForce(explosionVelocity, hit.transform.position + Vector3.back, explosionRadius);
+        rb.AddExplosionForce(explosionVelocity, transform.position + Vector3.down, explosionRadius);
         Instantiate(particles,hit.gameObject.transform.position, Quaternion.identity);
     }
 
